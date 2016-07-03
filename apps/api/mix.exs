@@ -20,7 +20,7 @@ defmodule Api.Mixfile do
   # Configuration for the OTP application.
   #
   # Type `mix help compile.app` for more information.
-  @services [:user_service]
+  @services [:user_service, :subscription_service]
   def application do
     [mod: {Api, []},
      applications: [:phoenix, :phoenix_html, :cowboy, :logger, :gettext,

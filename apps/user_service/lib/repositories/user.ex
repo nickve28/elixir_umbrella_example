@@ -1,10 +1,12 @@
 defmodule UserService.Repo do
   @users [
     %{
+      id: 1,
       name: "Nick",
       age: 22
     },
     %{
+      id: 2,
       name: "foo",
       age: 1
     }

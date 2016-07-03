@@ -3,8 +3,9 @@ defmodule Api.UserController do
 
   def index(conn, payload) do
     list_payload = %{
-      limit: Map.get(payload, "limit") |> String.to_integer,
-      offset: Map.get(payload, "offset") |> String.to_integer
+      limit: String.to_integer(Map.get(payload, "limit")),
+      offset: String.to_integer(Map.get(payload, "offset")),
+      include: Map.get(payload, "include")
     }
     render conn, "index.json", list_payload
   end
