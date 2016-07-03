@@ -8,9 +8,6 @@ defmodule Microservices.Mixfile do
      deps: deps]
   end
 
-  def application do
-    [applications: [:logger, :user_service]]
-  end
   # Dependencies can be Hex packages:
   #
   #   {:mydep, "~> 0.3.0"}
